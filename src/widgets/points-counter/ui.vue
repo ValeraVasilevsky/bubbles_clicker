@@ -1,11 +1,11 @@
 <template>
   <div :class="styles.container">
-    <PointsCounter />
+    <TokenLogo />
   </div>
 </template>
 
 <script setup lang="ts">
 import styles from "./styles.module.scss";
 
-import { PointsCounter } from "widgets/points-counter";
+import TokenLogo from "shared/icons/token.svg";
 </script>
