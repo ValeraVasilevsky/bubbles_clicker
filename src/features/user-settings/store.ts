@@ -1,12 +1,16 @@
 import { defineStore } from "pinia";
-import { ref } from "vue";
+import { computed, ref } from "vue";
 
-import { type UserSettings } from "./types";
+import { type User } from "./types";
 
-export const useUserSettingsStore = defineStore("user-settings", () => {
-  const user = ref<UserSettings | null>(null);
+export const useUserStore = defineStore("user", () => {
+  // constants
+  const user = ref<User | null>(null);
 
+  // computed
+  const points = computed((): number => user.value?.points || 0);
   return {
     user,
+    points
   };
 });

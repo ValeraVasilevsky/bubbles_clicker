@@ -1,0 +1,41 @@
+$display-l: 700 normal 40px/40.5px "Arial", sans-serif;
+$display-m: 700 normal 32px/32.5px "Arial", sans-serif;
+$display-s: 700 normal 24px/24.5px "Arial", sans-serif;
+$display-s-semi: 600 normal 24px/24.5px "Arial", sans-serif;
+
+$text-l-0: 400 normal 24px/24.5px "Arial", sans-serif;
+$text-l-1: 400 normal 20px/20.5px "Arial", sans-serif;
+$text-l-2: 400 normal 18px/18.5px "Arial", sans-serif;
+$text-l-3: 400 normal 16px/16.5px "Arial", sans-serif;
+
+.h1 {
+  font: $display-l;
+}
+
+.h2 {
+  font: $display-m;
+}
+
+.h3 {
+  font: $display-s;
+}
+
+.h3-semi {
+  font: $display-s-semi;
+}
+
+.text-l-0 {
+  font: $text-l-0;
+}
+
+.text-l-1 {
+  font: $text-l-1;
+}
+
+.text-l-2 {
+  font: $text-l-2;
+}
+
+.text-l-3 {
+  font: $text-l-3;
+}

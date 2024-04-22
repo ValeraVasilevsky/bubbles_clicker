@@ -3,4 +3,8 @@
   justify-content: flex-start;
   align-items: center;
   gap: $point-2;
+
+  & .points {
+    color: $white;
+  }
 }
