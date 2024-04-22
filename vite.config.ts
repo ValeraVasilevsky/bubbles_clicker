@@ -29,6 +29,14 @@ export default defineConfig({
     modules: {
       localsConvention: "camelCase",
     },
+
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+        @import "shared/theme/variables.scss";
+        `,
+      }
+    }
   },
 
   resolve: {

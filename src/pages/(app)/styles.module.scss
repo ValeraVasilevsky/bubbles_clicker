@@ -1,0 +1,11 @@
+.container {
+  background-color: $primary;
+  height: calc(100vh - $point-3 * 2);
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  padding: $point-3;
+}
