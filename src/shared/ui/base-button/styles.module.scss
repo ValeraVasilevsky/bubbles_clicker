@@ -1,0 +1,20 @@
+.button {
+  border: none;
+  outline: none;
+  padding: $point-2 $point-3;
+  border-radius: $radius-3;
+
+  transition: 0.3s;
+
+  width: 100%;
+
+  &.primary {
+    background-color: $white;
+    color: $primary;
+
+    &:active {
+      background-color: $white-80;
+      color: $primary-60;
+    }
+  }
+}

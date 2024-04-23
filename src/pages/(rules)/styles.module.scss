@@ -1,0 +1,14 @@
+.container {
+  height: calc(100vh - $point-3 * 2);
+  background-color: $primary;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+  padding: $point-3;
+
+  & .button {
+    margin-top: auto;
+  }
+}

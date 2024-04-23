@@ -17,5 +17,16 @@ export const router = createRouter({
         },
       ],
     },
+    {
+      path: "/rules",
+      component: (): Component => import("pages/(rules)/layout.vue"),
+      children: [
+        {
+          path: "",
+          name: ROUTER_NAME.RULES,
+          component: (): Component => import("pages/(rules)/index.vue"),
+        },
+      ],
+    },
   ],
 });
