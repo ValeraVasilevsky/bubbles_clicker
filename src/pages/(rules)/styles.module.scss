@@ -1,12 +1,33 @@
 .container {
   height: calc(100vh - $point-3 * 2);
-  background-color: $primary;
+  background-color: #7a7a7a;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
+  gap: $point-3;
 
   padding: $point-3;
+
+  & .img {
+    width: 256px;
+    height: 256px;
+    background-color: $white;
+  }
+
+  & .texts {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: $point;
+
+    & .title,
+    & .subtitle {
+      text-align: center;
+      color: $white;
+    }
+  }
 
   & .button {
     margin-top: auto;

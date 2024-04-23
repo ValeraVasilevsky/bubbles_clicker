@@ -1,6 +1,6 @@
 <template>
   <button :class="buttonClasses">
-    <Typography variant="text-l-2">
+    <Typography variant="text-l-2" weight="600">
       <slot />
     </Typography>
     <slot name="right-icon" />

@@ -1,4 +1,19 @@
 import fontClasses from "./fonts.module.scss";
+import weightClasses from "./weights.module.scss";
+
+export const weightMap = {
+  "100": weightClasses.thin,
+  "200": weightClasses.extraLight,
+  "300": weightClasses.light,
+  "400": weightClasses.regular,
+  "500": weightClasses.medium,
+  "600": weightClasses.semiBold,
+  "700": weightClasses.bold,
+  "800": weightClasses.extraBold,
+  "900": weightClasses.black,
+};
+
+export type TypographyWeight = keyof typeof weightMap;
 
 export const variantsMap = {
   h1: fontClasses.h1,
@@ -30,4 +45,5 @@ export const elementsMap: Record<TypographyVariant, TextElement> = {
 export interface TypographyProps {
   variant: TypographyVariant;
   as?: string;
+  weight?: TypographyWeight;
 }
