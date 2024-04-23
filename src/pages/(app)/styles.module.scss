@@ -1,5 +1,5 @@
 .container {
-  background-color: $primary;
+  background-color: #7a7a7a;
   height: calc(100vh - $point-3 * 2);
 
   display: flex;
@@ -8,4 +8,16 @@
   flex-direction: column;
 
   padding: $point-3;
+
+  & .points {
+    margin-top: $point-3;
+  }
+
+  & .league {
+    margin-top: $point-4;
+  }
+
+  & .menu {
+    margin-top: auto;
+  }
 }

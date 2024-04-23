@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+
+  & .level,
+  & .league {
+    padding: $point;
+    width: 50%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: $point;
+
+    & .icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+    }
+
+    & .texts {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 4px;
+    }
+  }
+
+  & .level {
+    background-color: $grey-1;
+    border-top-left-radius: $point-2;
+    border-bottom-left-radius: $point-2;
+
+    & .icon {
+      background-color: $grey-2;
+    }
+  }
+
+  & .league {
+    background-color: $grey-2;
+    border-top-right-radius: $point-2;
+    border-bottom-right-radius: $point-2;
+
+    & .icon {
+      background-color: $grey-1;
+    }
+  }
+}

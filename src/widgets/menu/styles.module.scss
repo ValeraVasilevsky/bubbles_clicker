@@ -1,0 +1,24 @@
+.container {
+  background-color: $grey-1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  border-radius: $point-2;
+  z-index: 2;
+
+  & .item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    width: calc(100% / 3);
+    padding: $point;
+
+    & .icon,
+    & .title {
+      color: $primary;
+    }
+  }
+}

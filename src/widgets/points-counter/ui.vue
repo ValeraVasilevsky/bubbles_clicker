@@ -2,9 +2,11 @@
   <div :class="styles.container">
     <TokenLogo />
 
-    <Typography variant="h3" :class="styles.points">
-      {{ userStore.points }}
-    </Typography>
+    <Transition mode="out-in">
+      <Typography variant="h1" weight="700" :class="styles.points">
+        {{ userStore.points }}
+      </Typography>
+    </Transition>
   </div>
 </template>
 
