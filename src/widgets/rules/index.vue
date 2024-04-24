@@ -17,7 +17,7 @@ const rules: {
 }[] = [
   {
     title: "Tap to farm bubbles token",
-    description: "Porttitor leo a diam sollicitudin",
+    description: "2Porttitor leo a diam sollicitudin",
   },
   {
     title: "Invite frens",
