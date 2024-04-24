@@ -4,6 +4,8 @@
     <UserLeagueAndLevel :class="styles.league" />
     <ClickImage :class="styles.image" @click="onClick" />
 
+    {{ userStore.user?.currentEnergy }}
+
     <Menu :class="styles.menu" />
   </div>
 </template>
@@ -16,6 +18,8 @@ import { UserLeagueAndLevel } from "entities/user";
 
 import { useUserStore } from "features/user-settings";
 
+import { watch } from "vue";
+
 import styles from "./styles.module.scss";
 
 // constants
@@ -24,5 +28,14 @@ const userStore = useUserStore();
 // methods
 const onClick = (): void => {
   userStore.increasePoints();
+  userStore.decreaseEnergy();
 };
+
+// watch
+watch(
+  () => userStore.user?.currentEnergy,
+  () => {
+    userStore.restoreEnergy();
+  }
+);
 </script>

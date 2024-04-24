@@ -5,6 +5,7 @@ export interface User {
   points: number;
   tap: number;
   energy: number;
+  currentEnergy: number;
   rechargingSpeed: number;
   turbo: number;
   recharge: number;
