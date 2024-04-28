@@ -6,6 +6,7 @@
 
     {{ userStore.user?.currentEnergy }}
 
+    <EnergyStatus :class="styles.energy" />
     <Menu :class="styles.menu" />
   </div>
 </template>
@@ -14,6 +15,8 @@
 import { PointsCounter } from "widgets/points-counter";
 import { ClickImage } from "widgets/click-image";
 import { Menu } from "widgets/menu";
+import { EnergyStatus } from "widgets/energy-status";
+
 import { UserLeagueAndLevel } from "entities/user";
 
 import { useUserStore } from "features/user-settings";
