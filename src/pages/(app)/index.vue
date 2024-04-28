@@ -3,9 +3,6 @@
     <PointsCounter :class="styles.points" />
     <UserLeagueAndLevel :class="styles.league" />
     <ClickImage :class="styles.image" @click="onClick" />
-
-    {{ userStore.user?.currentEnergy }}
-
     <EnergyStatus :class="styles.energy" />
     <Menu :class="styles.menu" />
   </div>
