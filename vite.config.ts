@@ -55,4 +55,6 @@ export default defineConfig(({ mode }) => ({
   server: {
     port: 8080,
   },
+
+  base: "/bubbles_clicker/",
 }));
