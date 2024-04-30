@@ -1,7 +1,11 @@
 <template>
   <div :class="styles.container">
-    <div :class="styles.img" />
+    <div :class="styles.gradient" />
 
+    <div :class="styles.img">
+      <MindIcon />
+      <LogoIcon />
+    </div>
     <div :class="styles.texts">
       <Typography variant="h1" :class="styles.title">
         WELCOME TO BUBBLE HERO
@@ -23,6 +27,9 @@
 import { RulesList } from "widgets/rules";
 import { BaseButton, Typography } from "shared/ui";
 import { useRouter } from "vue-router";
+
+import LogoIcon from "shared/icons/logo.svg";
+import MindIcon from "shared/icons/mind-icon.svg";
 
 import styles from "./styles.module.scss";
 

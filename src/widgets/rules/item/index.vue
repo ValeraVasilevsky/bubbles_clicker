@@ -1,7 +1,10 @@
 <template>
   <article :class="styles.container">
-    <div :class="styles.icon" />
 
+    <div :class="styles.icon">
+      <component :is="$props.icon" />
+      <div v-if="showCounter(props.title)" :class="styles.counter">+1</div>
+    </div>
     <div :class="styles.texts">
       <Typography variant="text-l-2" weight="700" :class="styles.title">
         {{ props.title }}
@@ -19,11 +22,16 @@ import { Typography } from "shared/ui";
 import styles from "./styles.module.scss";
 
 interface RulesListItem {
-  icon?: SVGElement;
+  icon: string;
   title: string;
   description: string;
 }
 
 // constants
 const props = defineProps<RulesListItem>();
+
+// methods
+const showCounter = (title: string): boolean => {
+  return title.toLowerCase().includes('invite')
+}
 </script>
