@@ -5,11 +5,36 @@
   width: 100%;
 
   gap: $point-2;
-
+  
   & .icon {
     width: 56px;
     height: 56px;
     background-color: $white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    & .counter {
+      background-color: $yellow-2;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(12px, -12px);
+
+    }
+    & > svg {
+      width: 32px;
+      height: 32px;
+      position: absolute;
+    }
   }
 
   & .texts {
