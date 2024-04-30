@@ -22,17 +22,17 @@ const menuItems: {
   title: string;
   icon: string;
 }[] = [
-  {
-    title: "Boosters",
-    icon: FlashIcon,
-  },
-  {
-    title: "Leaderboard",
-    icon: LeaderBoardIcon,
-  },
-  {
-    title: "Invite",
-    icon: InviteIcon,
-  },
-];
+    {
+      title: "Boosters",
+      icon: FlashIcon,
+    },
+    {
+      title: "Leaderboard",
+      icon: LeaderBoardIcon,
+    },
+    {
+      title: "Invite",
+      icon: InviteIcon,
+    },
+  ];
 </script>

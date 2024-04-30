@@ -1,7 +1,9 @@
 <template>
   <article :class="styles.container">
+
     <div :class="styles.icon">
       <component :is="$props.icon" />
+      <div v-if="showCounter(props.title)" :class="styles.counter">+1</div>
     </div>
     <div :class="styles.texts">
       <Typography variant="text-l-2" weight="700" :class="styles.title">
@@ -27,4 +29,9 @@ interface RulesListItem {
 
 // constants
 const props = defineProps<RulesListItem>();
+
+// methods
+const showCounter = (title: string): boolean => {
+  return title.toLowerCase().includes('invite')
+}
 </script>
