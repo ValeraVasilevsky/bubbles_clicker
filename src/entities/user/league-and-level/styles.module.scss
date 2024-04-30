@@ -18,6 +18,29 @@
       width: 24px;
       height: 24px;
       border-radius: 50%;
+      background-color: $white;
+
+      & .user-league {
+        &.bronze {
+          color: $bronze;
+        }
+        &.silver {
+          color: $silver;
+        }
+        &.gold {
+          color: $gold;
+        }
+        &.platinum {
+          color: $platinum;
+        }
+      }
+    }
+
+    & .level {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
     }
 
     & .texts {
@@ -33,19 +56,11 @@
     background-color: $grey-1;
     border-top-left-radius: $point-2;
     border-bottom-left-radius: $point-2;
-
-    & .icon {
-      background-color: $grey-2;
-    }
   }
 
   & .league {
     background-color: $grey-2;
     border-top-right-radius: $point-2;
     border-bottom-right-radius: $point-2;
-
-    & .icon {
-      background-color: $grey-1;
-    }
   }
 }

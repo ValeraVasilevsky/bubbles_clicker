@@ -5,7 +5,9 @@ import { fileURLToPath, URL } from "node:url";
 import svgLoader from "vite-svg-loader";
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
+  mode,
+
   plugins: [
     vue(),
     svgLoader({
@@ -53,4 +55,6 @@ export default defineConfig({
   server: {
     port: 8080,
   },
-});
+
+  base: "/bubbles_clicker/",
+}));

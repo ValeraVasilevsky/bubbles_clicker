@@ -47,8 +47,8 @@ export const useUserStore = defineStore("user", () => {
     if (!user.value) return;
     if (user.value.currentEnergy === user.value.energy) return;
 
-    const interval =
-      user.value.rechargingSpeed / (user.value.energy / user.value.recharge);
+    // const interval =
+    //   user.value.rechargingSpeed / (user.value.energy / user.value.recharge);
     // setInterval(() => {
     //   if (!user.value) {
     //     return;

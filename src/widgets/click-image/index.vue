@@ -1,14 +1,12 @@
 <template>
   <div ref="image" @click="getClickPosition" :class="styles.container">
-    <BubbleImage :class="styles.image" />
+    <img src="./bubble.png" :class="styles.image" />
     <ClickPoints />
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
-
-import BubbleImage from "./bubble.svg";
 
 import { ClickPoints } from "widgets/click-points";
 import { useShowPointsStore } from "features/show-click-points";

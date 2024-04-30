@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+
+  & .texts {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & .status {
+    margin-top: $point-2;
+    height: 16px;
+    border-radius: $point-2;
+    width: 100%;
+    border: 1px solid $primary;
+
+    will-change: background;
+    transition: 0.2s;
+  }
+}
