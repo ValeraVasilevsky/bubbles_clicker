@@ -10,6 +10,15 @@
     width: 56px;
     height: 56px;
     background-color: $white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > svg {
+      width: 32px;
+      height: 32px;
+    }
   }
 
   & .texts {
@@ -19,6 +28,7 @@
     flex-direction: column;
     gap: $point;
 
+    
     & .title,
     & .description {
       color: $primary;
